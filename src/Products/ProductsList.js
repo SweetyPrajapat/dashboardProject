@@ -13,6 +13,7 @@ import TableRow from "@mui/material/TableRow";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
 import { useAppStore } from "../appStore";
 import { db } from "../firebase-config";
@@ -268,6 +269,25 @@ export default function ProductsList() {
             onRowsPerPageChange={handleChangeRowsPerPage}
           />
         </Paper>
+      )}
+      {rows.length == 0 && (
+        <>
+          <Paper sx={{ width: "98%", overflow: "hidden", padding: "12px" }}>
+            <Box height={20} />
+            <Skeleton variant="rectangular" width={"100%"} height={30} />
+            <Box height={40} />
+            <Skeleton variant="rectangular" width={"100%"} height={60} />
+            <Box height={20} />
+            <Skeleton variant="rectangular" width={"100%"} height={60} />
+            <Box height={20} />
+            <Skeleton variant="rectangular" width={"100%"} height={60} />
+            <Box height={20} />
+            <Skeleton variant="rectangular" width={"100%"} height={60} />
+            <Box height={20} />
+            <Skeleton variant="rectangular" width={"100%"} height={60} />
+            <Box height={20} />
+          </Paper>
+        </>
       )}
     </>
   );

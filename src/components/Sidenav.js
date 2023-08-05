@@ -158,7 +158,10 @@ export default function Sidenav() {
               >
                 <InboxIcon />
               </ListItemIcon>
-              <ListItemText primary="Setting" sx={{ opacity: open ? 1 : 0 }} />
+              <ListItemText
+                primary="Chart Varieties"
+                sx={{ opacity: open ? 1 : 0 }}
+              />
             </ListItemButton>
           </ListItem>
           <ListItem
