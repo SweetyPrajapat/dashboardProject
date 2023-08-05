@@ -116,7 +116,7 @@ export default function Sidenav() {
           <ListItem
             disablePadding
             sx={{ display: "block" }}
-            onClick={() => navigate("/about")}
+            onClick={() => navigate("/products")}
           >
             <ListItemButton
               sx={{
@@ -134,7 +134,7 @@ export default function Sidenav() {
               >
                 <InboxIcon />
               </ListItemIcon>
-              <ListItemText primary="About" sx={{ opacity: open ? 1 : 0 }} />
+              <ListItemText primary="Products" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
           <ListItem
